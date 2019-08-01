@@ -1,0 +1,8 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorEmail": "charlie@callaway.cloud",
+      "authorUrl": "https://github.com/ChuckJonas"
+    }
+  }
+}

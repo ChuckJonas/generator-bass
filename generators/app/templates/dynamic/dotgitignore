@@ -1,0 +1,22 @@
+# build
+dist/
+
+# Logs
+logs
+*.log
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# sfdx
+.sfdx
+
+# should be ingored in app.  Each dev should setup their own targets
+.npmrc
+
+# generated app.  Update if changing name in .npmcrc
+<%= sfdxProjectRoot %>/main/default/staticresources/<%= staticResourceName %>.resource
+<%= sfdxProjectRoot %>/main/default/staticresources/<%= staticResourceName %>.resource-meta.xml
+config/cert/*.crt
+config/cert/*.key

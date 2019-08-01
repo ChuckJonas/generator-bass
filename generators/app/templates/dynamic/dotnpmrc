@@ -1,0 +1,5 @@
+dev_alias=<%= devUserName %>
+scratch_alias=bass-scratch
+prod_alias=<%= prodUserName %>
+
+devPort=<%= devServerPort %>
