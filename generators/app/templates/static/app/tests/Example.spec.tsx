@@ -1,5 +1,5 @@
-import App from '../dynamic/app/app';
-import {configure, mount} from 'enzyme';
+import App from '@src/app';
+import { configure, mount } from 'enzyme';
 import * as React from 'react';
 import * as Adapter from 'enzyme-adapter-react-16';
 

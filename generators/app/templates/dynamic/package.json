@@ -28,17 +28,20 @@
     "deploy-dev": "npm run build-dev && npm run push-dev",
     "deploy-scratch": "npm run bundle-app-dev && npm run push-scratch",
     "deploy-prod": "npm run build-prod && npm run push-prod",
-    <% if (useTsForce) { %>"generate-ts-force": "ts-force-gen -j ./config/ts-force-config.json",<% } %>
+    <% if (useTsForce) { %>"generate-ts-force": "ts-force-gen -j ./config/ts-force-config.json",<%
+    } %>
     "test": "jest --no-cache --config ./config/jest.json",
     "test:update": "jest --no-cache --config jest.json -u",
-    "reinstall": "rimraf node_modules dist && npm install"
+    "reinstall": "rimraf node_modules dist && npm install",
+    "start-chrome-for-debug": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --remote-debugging-port=9222"
   },
   "dependencies": {
     "antd": "^3.16.4",
     "babel-polyfill": "^6.26.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    <% if (useTsForce) { %>"ts-force": "^2.6.3",<% } %>
+    <% if (useTsForce) { %>"ts-force": "^2.7.0",<%
+    } %>
     "tslib": "^1.9.3"
   },
   "devDependencies": {
@@ -76,7 +79,8 @@
     "react-test-renderer": "^16.8.4",
     "rimraf": "^2.6.1",
     "style-loader": "^0.23.1",
-    <% if (useTsForce) { %>"ts-force-gen": "^2.6.3",<% } %>
+    <% if (useTsForce) { %>"ts-force-gen": "^2.7.0",<%
+    } %>
     "ts-jest": "^24.0.0",
     "ts-node": "^7.0.1",
     "tsconfig-paths": "^3.8.0",
