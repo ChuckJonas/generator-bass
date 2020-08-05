@@ -32,6 +32,7 @@
     "update-repo": "cd dist && yo bass bad-ass-salesforce-stack"
   },
   "dependencies": {
+    "@types/yeoman-generator": "^3.1.4",
     "chalk": "^2.1.0",
     "yeoman-generator": "^2.0.1",
     "yosay": "^2.0.1"
