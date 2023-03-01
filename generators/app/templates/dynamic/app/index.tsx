@@ -1,14 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-<% if (useTsForce) { %>import { setDefaultConfig } from 'ts-force';<% } %>
-
-import App from './app';
-
-// add custom stylesheet
-// tslint:disable-next-line:no-var-requires
-require('@src/styles/styles.less');
-
+import App from './App';
+import './index.css'
 <% if (useTsForce) { %>
+import { setDefaultConfig } from 'ts-force';
+
 // globals. set on page window
 declare let __RESTHOST__: string;
 declare let __ACCESSTOKEN__: string;

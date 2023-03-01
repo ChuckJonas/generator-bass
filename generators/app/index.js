@@ -104,19 +104,13 @@ module.exports = class extends Generator {
         this.destinationPath(path.join("config", "ts-force-config.json")),
         templateProps
       );
-
-      this.fs.copyTpl(
-        this.templatePath(path.join(dynamic, "app", "appTsForce.tsx")),
-        this.destinationPath(path.join("app", "app.tsx")),
-        templateProps
-      );
-    } else {
-      this.fs.copyTpl(
-        this.templatePath(path.join(dynamic, "app", "appNoTsForce.tsx")),
-        this.destinationPath(path.join("app", "app.tsx")),
-        templateProps
-      );
     }
+
+    this.fs.copyTpl(
+      this.templatePath(path.join(dynamic, "app", "App.tsx")),
+      this.destinationPath(path.join("app", "App.tsx")),
+      templateProps
+    );
 
     this.fs.copyTpl(
       this.templatePath(path.join(dynamic, "app", "index.tsx")),
